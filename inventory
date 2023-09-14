@@ -1,2 +1,4 @@
+[db_servers]
 jespermintdb@10.0.2.4
+[web_servers]
 debianjesperweb@10.0.2.5

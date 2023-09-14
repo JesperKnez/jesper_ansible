@@ -12,6 +12,15 @@
       state: latest
     when: ansible_distribution == "Debian"
 
+  - name: copy index.php to webserver
+    tags: apache,apache,apache2
+    copy:
+     src: files/
+     dest: /var/www/html/
+     owner: root
+     group: root
+     mode: 0644
+
 - hosts: db_servers
   become: true
   tasks:
